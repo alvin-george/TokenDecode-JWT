@@ -12,9 +12,11 @@
 		182382B81F1F736C00F6D2F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182382B61F1F736C00F6D2F0 /* Main.storyboard */; };
 		182382BA1F1F736C00F6D2F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182382B91F1F736C00F6D2F0 /* Assets.xcassets */; };
 		182382BD1F1F736C00F6D2F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182382BB1F1F736C00F6D2F0 /* LaunchScreen.storyboard */; };
+		BAD7C91A2B312868B264207A /* Pods_TokenDecode_JWT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F006D06A41432B0E1BE152C /* Pods_TokenDecode_JWT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F006D06A41432B0E1BE152C /* Pods_TokenDecode_JWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TokenDecode_JWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		182382AF1F1F736C00F6D2F0 /* TokenDecode-JWT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TokenDecode-JWT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		182382B21F1F736C00F6D2F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		182382B41F1F736C00F6D2F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		182382B91F1F736C00F6D2F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		182382BC1F1F736C00F6D2F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		182382BE1F1F736C00F6D2F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3569581F59BA66E8EB684EB0 /* Pods-TokenDecode-JWT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokenDecode-JWT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TokenDecode-JWT/Pods-TokenDecode-JWT.debug.xcconfig"; sourceTree = "<group>"; };
+		54BC44661DEF157785BC2C3F /* Pods-TokenDecode-JWT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokenDecode-JWT.release.xcconfig"; path = "Pods/Target Support Files/Pods-TokenDecode-JWT/Pods-TokenDecode-JWT.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD7C91A2B312868B264207A /* Pods_TokenDecode_JWT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				182382B11F1F736C00F6D2F0 /* TokenDecode-JWT */,
 				182382B01F1F736C00F6D2F0 /* Products */,
+				767C4A4A3BD6EC83A75D8E99 /* Pods */,
+				F26FA4CCEC0943303C4CD22D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "TokenDecode-JWT";
 			sourceTree = "<group>";
 		};
+		767C4A4A3BD6EC83A75D8E99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3569581F59BA66E8EB684EB0 /* Pods-TokenDecode-JWT.debug.xcconfig */,
+				54BC44661DEF157785BC2C3F /* Pods-TokenDecode-JWT.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F26FA4CCEC0943303C4CD22D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F006D06A41432B0E1BE152C /* Pods_TokenDecode_JWT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 182382C11F1F736C00F6D2F0 /* Build configuration list for PBXNativeTarget "TokenDecode-JWT" */;
 			buildPhases = (
+				E22D72E8FA8EF955905D0A7E /* [CP] Check Pods Manifest.lock */,
 				182382AB1F1F736C00F6D2F0 /* Sources */,
 				182382AC1F1F736C00F6D2F0 /* Frameworks */,
 				182382AD1F1F736C00F6D2F0 /* Resources */,
+				EE4C2E0522C788FB34082638 /* [CP] Embed Pods Frameworks */,
+				E52B157011E53EA3E8716DAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E22D72E8FA8EF955905D0A7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E52B157011E53EA3E8716DAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TokenDecode-JWT/Pods-TokenDecode-JWT-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE4C2E0522C788FB34082638 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TokenDecode-JWT/Pods-TokenDecode-JWT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		182382AB1F1F736C00F6D2F0 /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		182382C21F1F736C00F6D2F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3569581F59BA66E8EB684EB0 /* Pods-TokenDecode-JWT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "TokenDecode-JWT/Info.plist";
@@ -270,6 +346,7 @@
 		};
 		182382C31F1F736C00F6D2F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54BC44661DEF157785BC2C3F /* Pods-TokenDecode-JWT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "TokenDecode-JWT/Info.plist";
